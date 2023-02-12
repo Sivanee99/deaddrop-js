@@ -1,0 +1,13 @@
+{
+    "appenders":{
+        "application":{
+            "type":"file",
+            "filename": "log.txt",
+            "numBackups":2,
+            "maxLogSize":10485760
+        }
+    },
+    "categories": {
+        "app":{"appenders":["application"],"level":"DEBUG"}
+    }
+}

@@ -7,9 +7,14 @@ export const userExists = async (user: string): Promise<boolean> => {
     const result = await db.get(query, {
         ':user': user,
     });
-
-    return typeof result.id === "number";
+    if(!(result === undefined)){
+        return typeof result.id === "number";
+}   else{
+        return false;
 }
+    
+    }
+    
 
 export const getUserId = async (user: string): Promise<number> => {
     let db = await connect();
@@ -51,8 +56,8 @@ export const setUserPassHash = async (user: string, hash: string) => {
     });
 }
 
-export const noUsers = async (): Promise<boolean> => {
+export const noUsers = async (user:string): Promise<boolean> => {
     let db = await connect();
-    let result = await db.get("SELECT COUNT(*) FROM Users;");
+    let result = await db.get(`SELECT COUNT(*) FROM Users WHERE user= :user;`,{":user":user});
     return Promise.resolve(result['COUNT(*)'] === 0);
 }

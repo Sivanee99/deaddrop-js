@@ -7,6 +7,15 @@ import { newUser } from "./new";
 import { readMessages } from "./read";
 import { sendMessage } from "./send";
 
+import log4js from "log4js";
+
+log4js.configure({
+  appenders: {application:{type:"file",filename:"log.txt"}},
+  categories:{default:{appenders:["application"],level:"debug"}}
+})
+
+const log = log4js.getLogger("application");
+
 const program = new Command();
 
 // connect early so that if the db needs to be created, everything is populated by the time we
@@ -48,7 +57,7 @@ if (options.new) {
   void (async function () {
     await connect();
   })().then(() => {
-    if (user === "" && !noUsers()) {
+    if (user === "" && !noUsers(user)) {
       console.error("Please specify a user when running in new mode");
     } else {
       newUser(user);

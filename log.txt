@@ -1,0 +1,7 @@
+
+[2023-02-12T12:09:49.346] [INFO] application - Message sent
+[2023-02-12T12:10:10.023] [INFO] application - Message read
+[2023-02-12T12:10:33.256] [INFO] application - New user created
+[2023-02-12T12:10:58.777] [ERROR] application - Unable to verify password.Message unread.
+[2023-02-12T12:11:20.639] [ERROR] application - No user exists. Message unread.
+[2023-02-12T12:11:40.541] [ERROR] application - No user exists.Message unsent.

@@ -20,3 +20,14 @@ Then run `node dist/index.js --new --user <username here>` and you will be promp
 ## Database
 
 Data gets stored into the local database file dd.db. This file will not by synched to git repos. Delete this file if you don't set up a user properly on the first go
+
+## Logging Strategy
+ In this program, log4js is used to log activities in a log file.
+ A separate folder called configuration to configure the log4js  is created where the file log.txt to log the messages is defined
+ This application is then called in the files where logging is required.
+ The log is then declared according to whether it is an information or error. For sending, reading and creating users, the log are declared as information while password verifications and user existence are declared as errors.
+
+ ## Mitigation
+ A change that was implemented was to be able to create more than one new user. Previously only one new user could be created and writing and reading messages could be done with just one user.
+ Apart from that, the error displayed for when sending or reading message to a user that did not exist was that of "Error occured during reading".Changes were implemented so that the error that the user does not exist is returned.
+
