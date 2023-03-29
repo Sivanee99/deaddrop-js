@@ -12,9 +12,19 @@ CREATE TABLE Users (
 
 CREATE TABLE Messages (
     id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    author INTEGER NOT NULL REFERENCES Users(id),
     recipient INTEGER NOT NULL REFERENCES Users(id),
-    data TEXT NOT NULL
+    data TEXT NOT NULL,
+    mac TEXT NOT NULL
 );
+
+CREATE TRIGGER mac_trigger BEFORE UPDATE ON Messages
+BEGIN
+SELECT CASE
+WHEN (NEW.mac <> OLD.mac)
+    THEN RAISE (ABORT,"MAC may not be changed")
+END;
+END;
 `
 
 export const connect = async (): Promise<Database<sqlite3.Database, sqlite3.Statement>> => {

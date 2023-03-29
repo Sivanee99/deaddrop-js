@@ -5,3 +5,50 @@
 [2023-02-12T12:10:58.777] [ERROR] application - Unable to verify password.Message unread.
 [2023-02-12T12:11:20.639] [ERROR] application - No user exists. Message unread.
 [2023-02-12T12:11:40.541] [ERROR] application - No user exists.Message unsent.
+[2023-03-27T16:11:23.331] [INFO] application - New user created
+[2023-03-27T18:04:14.270] [INFO] application - New user created
+[2023-03-27T18:04:37.162] [INFO] application - New user created
+[2023-03-27T18:05:44.352] [INFO] application - Message sent
+[2023-03-27T18:08:53.367] [INFO] application - New user created
+[2023-03-27T18:09:14.132] [INFO] application - New user created
+[2023-03-27T18:11:25.124] [INFO] application - Message sent
+[2023-03-27T18:14:07.317] [INFO] application - New user created
+[2023-03-27T18:14:19.898] [INFO] application - New user created
+[2023-03-27T18:14:41.711] [INFO] application - Message sent
+[2023-03-27T18:16:07.113] [INFO] application - New user created
+[2023-03-27T18:16:18.854] [INFO] application - New user created
+[2023-03-27T18:16:33.999] [INFO] application - Message sent
+[2023-03-27T18:18:28.285] [INFO] application - New user created
+[2023-03-27T18:18:40.172] [INFO] application - New user created
+[2023-03-27T18:18:54.770] [INFO] application - Message sent
+[2023-03-27T18:22:11.958] [INFO] application - New user created
+[2023-03-27T18:22:33.382] [INFO] application - New user created
+[2023-03-27T18:23:49.583] [INFO] application - Message sent
+[2023-03-27T18:28:29.610] [INFO] application - Message sent
+[2023-03-27T18:30:41.515] [INFO] application - New user created
+[2023-03-27T18:30:58.417] [INFO] application - New user created
+[2023-03-27T18:31:14.105] [INFO] application - Message sent
+[2023-03-27T18:35:17.286] [INFO] application - Message sent
+[2023-03-27T18:39:11.142] [INFO] application - Message sent
+[2023-03-27T18:40:27.551] [INFO] application - Message sent
+[2023-03-27T18:41:17.798] [INFO] application - Message sent
+[2023-03-27T18:43:53.961] [INFO] application - Message sent
+[2023-03-27T18:45:02.372] [INFO] application - Message sent
+[2023-03-27T18:46:29.897] [INFO] application - Message read
+[2023-03-27T18:49:18.189] [ERROR] application - The message sent by Paul has been modified
+[2023-03-27T18:49:18.191] [INFO] application - Message read
+[2023-03-27T18:54:21.511] [INFO] application - Message sent
+[2023-03-27T18:54:40.638] [ERROR] application - The message sent by Paul has been modified
+[2023-03-27T18:54:40.641] [INFO] application - Message read
+[2023-03-27T18:55:44.687] [INFO] application - Message sent
+[2023-03-27T18:55:49.930] [ERROR] application - The message sent by Paul has been modified
+[2023-03-27T18:55:49.933] [INFO] application - Message read
+[2023-03-27T18:57:07.649] [INFO] application - Message sent
+[2023-03-27T18:57:13.016] [ERROR] application - The message sent by Paul has been modified
+[2023-03-27T18:57:13.020] [INFO] application - Message read
+[2023-03-28T21:23:40.707] [INFO] application - Message sent
+[2023-03-28T21:23:52.909] [ERROR] application - The message sent by Paul has been modified
+[2023-03-28T21:23:52.913] [INFO] application - Message read
+[2023-03-28T21:26:27.235] [ERROR] application - The message sent by Paul has been modified
+[2023-03-28T21:26:27.237] [ERROR] application - The message sent by Paul has been modified
+[2023-03-28T21:26:27.239] [INFO] application - Message read
